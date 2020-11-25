@@ -1,0 +1,30 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-row>
+      
+        <ion-icon name="arrow-back"></ion-icon>
+      
+      <ion-title>store</ion-title>
+  </ion-row>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let product of products; index as i">
+    <ion-row>
+        <img src="{{product.photo}}">
+      <div>
+        <h1 id="name">{{product.name}}</h1>
+        <div>
+          <p id="description">{{product.description}}</p>
+          <h1 id="price">Precio: ${{product.price}} MXN</h1>
+          <ion-button size="small" (click)="showAlert()">
+            Agregar
+            &nbsp;
+            <ion-icon name="cart"></ion-icon>
+          </ion-button>
+        </div>
+      </div>
+    </ion-row>
+  </ion-card>
+</ion-content>

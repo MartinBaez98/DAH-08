@@ -1,20 +1,21 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      Productos - One Piece
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
-    </ion-toolbar>
-  </ion-header>
-
-  <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
-  </div>
+  <img src='https://magnetbyshibuya109.jp/wp-content/uploads/2019/06/400d49f3d36d1502caf29ed5070ebecb.jpg' style="margin-top: 5%;">
+  <ion-button expand="block" style="margin-top: 10%;" (click)="openStore()">
+      <ion-icon name="pricetags"></ion-icon>
+      &nbsp;
+      Productos
+  </ion-button>
+  <ion-button expand="block" style="margin-top: 3%;" (click)="openCart()">
+    <ion-icon name="cart"></ion-icon>
+    &nbsp;
+    Carrito de Compras
+</ion-button>
 </ion-content>

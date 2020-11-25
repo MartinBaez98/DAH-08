@@ -1,0 +1,26 @@
+img {
+    width: 30%;
+    height: 20%;
+    margin-right: 5%;
+    margin-left: 5%;
+}
+
+#content{
+    align-items: center;
+    width: auto;
+    display: flex;
+}
+
+#name {
+    font-size: 100%;
+    color: black;
+}
+
+#price {
+    font-size: 80%;
+    color: black;
+}
+
+#description {
+    font-size: 60%;
+}

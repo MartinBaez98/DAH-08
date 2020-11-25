@@ -1,4 +1,7 @@
 import { Component } from '@angular/core';
+import { Products } from '../models/products';
+import { ProductsService } from '../services/products.service'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-home',
@@ -7,6 +10,14 @@ import { Component } from '@angular/core';
 })
 export class HomePage {
 
-  constructor() {}
+  constructor(private router: Router) {}
+
+  openStore(){
+    this.router.navigate(['/store']);
+  }
+
+  openCart(){
+    this.router.navigate(['/cart']);
+  }
 
 }
